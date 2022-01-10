@@ -25,7 +25,7 @@ Abbiamo visto qualcosa di particolare che possiamo usare?
 
 
 for (let i = 1; i <= 100; i++) {
-	if (!(i % 3 || i % 5)) {		//? Perchè funziona l'OR e non l'AND??
+	if (!(i % 3) && !(i % 5)) {
 		console.log("FizzBuzz");
 	}
 	else if (!(i % 3)) {
@@ -39,13 +39,3 @@ for (let i = 1; i <= 100; i++) {
 	}
 }
 
-
-
-
-/* for (let i = 1; i <= 10; i++) {
-	count = i;
-	if (i == 3) {
-		console.log('Fizz')
-	}
-	console.log(count);
-} */
